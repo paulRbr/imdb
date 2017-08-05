@@ -1,4 +1,3 @@
-# -*- encoding: utf-8 -*-
 $LOAD_PATH.push File.expand_path('../lib', __FILE__)
 require 'imdb/version'
 
@@ -19,12 +18,12 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map { |f| File.basename(f) }
   s.require_paths = ['lib']
 
-  s.add_dependency 'nokogiri', '= 1.6.5'
+  s.add_dependency 'nokogiri', '= 1.8.0'
 
   s.add_development_dependency 'rake', '~> 10.0.3'
   s.add_development_dependency 'rspec', '~> 3.0.0'
-  s.add_development_dependency 'gokdok'
   s.add_development_dependency 'rdoc', '~> 4.0'
   s.add_development_dependency 'fakeweb'
+  s.add_development_dependency 'pry'
 
 end

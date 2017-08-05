@@ -18,10 +18,3 @@ RDoc::Task.new(:rdoc) do |rdoc|
   rdoc.rdoc_files.include('lib/**/*.rb')
   rdoc.options << '--webcvs=http://github.com/ariejan/imdb/tree/master/'
 end
-
-require 'gokdok'
-Gokdok::Dokker.new do |gd|
-  gd.repo_url = 'git@github.com:ariejan/imdb.git'
-  gd.doc_home = 'rdoc'
-  gd.remote_path = '.'
-end
