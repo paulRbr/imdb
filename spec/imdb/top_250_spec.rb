@@ -12,6 +12,9 @@ describe Imdb::Top250 do
   end
 
   it 'should provide array like access to the movies' do
+    expect(subject[0].id).to eq('0111161')
+    expect(subject[1].id).to eq('0068646')
+    expect(subject[2].id).to eq('0071562')
     expect(subject[0].title).to eq('1. The Shawshank Redemption')
     expect(subject[1].title).to eq('2. The Godfather')
     expect(subject[2].title).to eq('3. The Godfather: Part II')
